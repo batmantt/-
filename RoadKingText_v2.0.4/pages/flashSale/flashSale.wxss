@@ -1,0 +1,111 @@
+.body {
+  width: 100%;
+}
+
+.banner {
+  margin-bottom: 15rpx;
+}
+
+.goods_list {
+  width: 100%;
+  height: auto;
+  margin-top: 25rpx;
+}
+
+.goods {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  width: 93%;
+  height: 246rpx;
+  border: 1rpx solid #f2f2f2;
+  margin: 0 auto;
+  margin-bottom: 26rpx;
+  background-color: white;
+}
+
+.shopping_img {
+  height: 190rpx;
+  width: 190rpx;
+  margin-left: 20rpx;
+}
+
+.shopping_info {
+  height: 190rpx;
+  width: 900rpx;
+  margin-left: 20rpx;
+}
+
+.shopping-name {
+  height: 50rpx;
+  font-size: 26rpx;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 1rpx;
+}
+
+.text-progress {
+  color: #666;
+  font-size: 20rpx;
+  display: flex;
+  flex-flow: row;
+  margin-top: 15rpx;
+}
+
+.progress {
+  width: 170rpx;
+  margin-left: 20rpx;
+  margin-top: 6rpx;
+}
+
+.text-time {
+  margin-top: -10rpx;
+}
+
+.text-tip {
+  font-size: 24rpx;
+  color: #f00;
+  letter-spacing: 3rpx;
+}
+
+.text-progress {
+  margin-top: 20rpx;
+}
+
+.text-price {
+  margin-top: -8rpx;
+  display: flex;
+}
+
+.current-price {
+  font-size: 34rpx;
+  color: #f00;
+}
+
+.previous-prices {
+  font-size: 22rpx;
+  color: #666;
+  margin-left: 10rpx;
+  margin-top: 15rpx;
+}
+.previous-prices view{
+ position: relative;
+ margin-bottom: -45rpx;
+}
+.previous-prices text{
+ border-bottom:1rpx solid #666;  
+ color: #fff;
+}
+button {
+  background-color: #fbd447;
+  height: 62rpx;
+  width: 156rpx;
+  font-size: 24rpx;
+  color: #000;
+  letter-spacing: 1rpx;
+  font-style: pingFang-SC-Medium;
+  font-weight: 500;
+  position: absolute;
+  margin-left: 280rpx;
+  margin-top: -50rpx;
+}

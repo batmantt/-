@@ -1,0 +1,16 @@
+<!--pages/myorder/myorder.wxml-->
+
+<scroll-view class="myorder-container" scroll-y="true">
+  <view class="order-item" wx:for="{{dataList}}"wx:key="navItems" wx:for-item="item" data-index='{{index}}'>
+    <view class="shop-img">
+      <image class="img" src="{{item.trGoodsPicture01}}"></image>
+    </view>
+    <view class="title">
+      {{item.trGoodsName}}
+    </view>
+    <view class="card">
+      <image class="img" src="https://tango.heeyhome.com/upload/images/yesexchange.png"></image>
+    </view>
+
+  </view>
+</scroll-view>

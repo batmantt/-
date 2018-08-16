@@ -1,0 +1,20 @@
+<view class="sign-container" bindtouchmove="tapmove" bindtouchstart='tapstart'>
+  <view class="head" animation="{{animationData}}">
+    顶部弹窗
+  </view>
+  <view class="top">
+    <view class="logo-con">
+      <image class="img" src="../../images/logoback.png"></image>
+    </view>
+  </view>
+  <view class="content">
+    <component-calendar list="{{signList}}" bindclicksign="qianDao"></component-calendar>
+    <view class="bottom">
+         <button class="integral" open-type='share'>点我分享可领取积分哦</button>        
+         <!-- style="background-image:url(../../images/itergral.png)" -->
+    </view>
+  </view>
+
+  <button open-type='getUserInfo' bindgetuserinfo="getUserInfo"></button>
+
+</view>

@@ -1,0 +1,131 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.9",
+	"appid": "wx5af7ff61e91b9f37",
+	"projectname": "1.0.6",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/userCenter/userCenter",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "积分商城",
+					"pathName": "pages/integralMall/integralMall",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "积分明细",
+					"pathName": "pages/integralList/integralList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "账户设置",
+					"pathName": "pages/userSetup/userSetup",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "账户设置",
+					"pathName": "pages/userSetup/userSetup",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "系统消息",
+					"pathName": "pages/systemNews/systemNews",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "签到规则",
+					"pathName": "pages/rules-of-sign/rules-of-sign",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "补签卡",
+					"pathName": "pages/check-ins/check-ins",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "收货地址",
+					"pathName": "pages/shoppingaddress/shoppingaddress",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "添加地址",
+					"pathName": "pages/Addsite/Addsite",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "添加地址(修改地址)",
+					"pathName": "pages/Addsite/Addsite",
+					"query": "modify=true"
+				},
+				{
+					"id": -1,
+					"name": "业务员积分",
+					"pathName": "pages/salesman_integral/salesman_integral",
+					"query": ""
+				},
+				{
+					"id": 12,
+					"name": "我的二维码",
+					"pathName": "pages/qrcode/qrcode",
+					"query": ""
+				},
+				{
+					"id": 13,
+					"name": "申请二维码",
+					"pathName": "pages/apply_code/apply_code",
+					"query": "back_name=招商银行信用卡"
+				},
+				{
+					"id": -1,
+					"name": "成功申请二维码",
+					"pathName": "pages/apply_code/apply_code",
+					"query": "back_name=招商银行信用卡"
+				}
+			]
+		}
+	}
+}

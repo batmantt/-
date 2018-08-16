@@ -1,0 +1,74 @@
+/* pages/Addsite/Addsite.wxss */
+
+.addsite_content {
+  min-height: 100vh;
+  background: #f4f4f4;
+  position: absolute;
+}
+
+.addsite_content text {
+  margin-left: 24rpx;
+}
+
+.addsite_content .name, .area, .tel, .street, .confirm_btn {
+  font-size: 28rpx;
+  width: 702rpx;
+  height: 100rpx;
+  background: #fff;
+  margin: 28rpx 24rpx 0 24rpx;
+  position: relative;
+  border-radius: 5rpx;
+  display: flex;
+  float: left;
+  line-height: 100rpx;
+}
+
+input {
+  font-size: 28rpx;
+  line-height: 100rpx;
+  margin: auto;
+  margin-left: 84rpx;
+  width: 530rpx;
+}
+
+.addsite_content .confirm_btn {
+  height: 90rpx;
+  background: #ffd300;
+  color: #fff;
+  font-size: 30rpx;
+  margin-top: 56rpx;
+}
+
+.addsite_content .confirm_btn text {
+  margin: auto;
+}
+
+.area-wrapper {
+  display: flex;
+  float: left;
+}
+
+.item {
+  width: 180rpx;
+  margin-left: 80rpx;
+  overflow: hidden;
+}
+
+.item .area_text {
+  margin-left: 0rpx;
+}
+
+.item_middle {
+  width: 180rpx;
+}
+
+.item_middle .area_text {
+  margin-left: 0rpx;
+}
+
+.item_last {
+   width: 180rpx; 
+}
+.item_last .area_text {
+  margin-left: 0rpx;
+}

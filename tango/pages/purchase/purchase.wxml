@@ -1,0 +1,4 @@
+<view class="purchase-container">
+  <image id='img01' src="https://tango.heeyhome.com/upload/images/img_tango_banner_01@2x.png"></image>
+  <image id='img02' src="https://tango.heeyhome.com/upload/images/img_tango_banner_02@2x.png"></image>
+</view>

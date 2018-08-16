@@ -1,0 +1,119 @@
+<!--pages/userCenter/userCenter.wxml-->
+
+<view class="usercenter-container">
+  <view class="top">
+    <image class="img" src="https://tango.heeyhome.com/upload/images/minetop.png"></image>
+    <view class="head-img">
+      <button class="img" wx:if="{{!app_userInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+        <image class="img" src="/images/tango_logo_20180620154451.png"></image>
+      </button>
+      <image class="img" wx:else="" src="{{headImg}}"></image>
+    </view>
+  </view>
+  <view class="sign-info">
+    <view class="item">
+      <view class="num">{{myItergral}}</view>
+      <view class="text">我的积分</view>
+    </view>
+    <view class="item">
+      <view class="num">
+        <view class="text-special">{{userName}}</view>
+      </view>
+    </view>
+    <view class="item1">
+      <view class="num">{{myItergralSpeed}}X</view>
+      <view class="text">积分加速</view>
+    </view>
+  </view>
+  <view class="operation-con">
+    <view class="user-top">
+      <button class="item_login" wx:if="{{!app_userInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+        <view class="head">
+          <image class="icon-img" src="https://tango.heeyhome.com/upload/images/iterlist.png"></image>
+          <text>积分明细</text>
+        </view>
+        <image class="icon-img-arrow" src="https://tango.heeyhome.com/upload/images/right.png"></image>
+      </button>
+      <view class="item" wx:else="" bindtap="getItergralList">
+        <view class="head">
+          <image class="icon-img" src="https://tango.heeyhome.com/upload/images/iterlist.png"></image>
+          <text>积分明细</text>
+        </view>
+        <image class="icon-img-arrow" src="https://tango.heeyhome.com/upload/images/right.png"></image>
+      </view>
+
+      <button class="item_login" wx:if="{{!app_userInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+        <view class="head">
+          <image class="icon-img" src="/images/icon_address@2x.png.png"></image>
+          <text>收货地址</text>
+        </view>
+        <image class="icon-img-arrow" src="https://tango.heeyhome.com/upload/images/right.png"></image>
+      </button>
+      <view class="item" wx:else="" bindtap="shippingAddress">
+        <view class="head">
+          <image class="icon-img" src="/images/icon_address@2x.png.png"></image>
+          <text>收货地址</text>
+        </view>
+        <image class="icon-img-arrow" src="https://tango.heeyhome.com/upload/images/right.png"></image>
+      </view>
+
+      <button class="item_login" wx:if="{{!app_userInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+        <view class="head">
+          <image class="icon-img" src="https://tango.heeyhome.com/upload/images/sysnews.png"></image>
+          <text>系统消息  </text>
+        </view>
+        <image class="icon-img-arrow" src="https://tango.heeyhome.com/upload/images/right.png"></image>
+      </button>
+      <view class="item" wx:else="" bindtap="getSystemNews">
+        <view class="head">
+          <image class="icon-img" src="https://tango.heeyhome.com/upload/images/sysnews.png"></image>
+          <text>系统消息  </text>
+        </view>
+        <image class="icon-img-arrow" src="https://tango.heeyhome.com/upload/images/right.png"></image>
+      </view>
+
+
+
+      <button class="item_login" wx:if="{{!app_userInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+        <view class="head">
+          <image class="icon-img" src="https://tango.heeyhome.com/upload/images/userset.png"></image>
+          <text>账户设置  </text>
+        </view>
+        <image class="icon-img-arrow" src="https://tango.heeyhome.com/upload/images/right.png"></image>
+      </button>
+      <view class="item" wx:else="" bindtap="userSet">
+        <view class="head">
+          <image class="icon-img" src="https://tango.heeyhome.com/upload/images/userset.png"></image>
+          <text>账户设置  </text>
+        </view>
+        <image class="icon-img-arrow" src="https://tango.heeyhome.com/upload/images/right.png"></image>
+      </view>
+    </view>
+
+
+    <view class="user-bottom" wx:if="{{app_userInfo}}">
+      <view wx:if="{{isCustomer}}">
+        <view class="item" bindtap="goItergralMall">
+          <view class="head">
+            <image class="icon-img" src="https://tango.heeyhome.com/upload/images/itermall.png"></image>
+            <text>积分商城</text>
+          </view>
+          <image class="icon-img-arrow" src="https://tango.heeyhome.com/upload/images/right.png"></image>
+        </view>
+        <view class="item" bindtap="getMyQrCode">
+          <view class="head">
+            <image class="icon-img" src="https://tango.heeyhome.com/upload/images/twocode.png"></image>
+            <text>我的二维码 </text>
+          </view>
+          <image class="icon-img-arrow" src="https://tango.heeyhome.com/upload/images/right.png"></image>
+        </view>
+      </view>
+      <!-- <view class="item" bindtap="aboutMenu">
+        <view class="head">
+          <image class="icon-img" src="https://tango.heeyhome.com/upload/images/images/about.png"></image>
+          <text>关于TanGo</text>
+        </view>
+      </view> -->
+    </view>
+  </view>
+</view>

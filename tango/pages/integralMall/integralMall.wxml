@@ -1,0 +1,43 @@
+<scroll-view class="integral-mall-container" scroll-y="true" bindscrolltolower="upper" bindscrolltoupper="refesh">
+  <!-- <view class="btn-myorder" bindtap="seeMyOrder">
+    我的订单
+  </view> -->
+  <view class="top_main">
+    <view class='top_left' bindtap="salesman_integral">
+      <image src='https://tango.heeyhome.com/upload/images/icon_ji_fen@2x.png' mode="scaleToFill" style='height:80rpx;width:84rpx'></image>
+      <view >
+        <text class='first_test'>可用积分</text>
+        <text class='sec_test'>{{userIntegralSales}}</text>
+      </view>
+    </view>
+    <view class='top_right' bindtap="seeMyOrder">
+      <image src='https://tango.heeyhome.com/upload/images/icon_dingdan@2x.png' mode="scaleToFill" style='height:80rpx;width:84rpx'></image>
+      <text class='first_test_order'>我的订单</text>
+    </view>
+  </view>
+  <view class='itergral-good' wx:for="{{dataList}}" wx:key="navItems" wx:for-item="item" data-index='{{index}}'>
+    <view class="itergral-good-container">
+      <view class="image">
+        <image class="img" src="{{item.goodsPicture01}}"></image>
+      </view>
+      <view class="good-info">
+        <view class="convert-infos">
+          <view class="title">{{item.goodsName}}</view>
+          <!-- <view class="remind">这里是一些用券信息</view> -->
+          <view class="price">原价 ￥{{item.goodsOldPrice}}</view>
+        </view>
+        <view>
+        </view>
+        <view class="convert-good">
+          <view class="need-itergral">
+            <image class="img" src="https://tango.heeyhome.com/upload/images/qq.png"></image>
+            x{{item.goodsPrice}}
+          </view>
+          <view class="btn-convert" catchtap='click_tab' id='{{index}}'>
+            立即兑换
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

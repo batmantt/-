@@ -1,0 +1,71 @@
+<view class='content'>
+
+  <!-- 顶部搜索 -->
+  <view class='top_search'>
+    <view class=''>
+      图标--
+    </view>
+    <view class='city_name' bindtap="changeCityBtn">
+      {{city}}--
+    </view>
+    <view class='down_arrow' wx:if="{{flag==1}}">
+      向上箭头--
+    </view>
+    <view class='up_arrow' wx:else="">
+      向下箭头
+    </view>
+    <view class='input_box'>
+      <view>放大镜</view>
+      <input value='' placeholder='请输入地址' bindinput='bindinput' bindfocus='focus' value="{{inputValue}}"></input>
+      <view wx:if="{{flag==2}}"bindtap="close">关闭</view>
+    </view>
+  </view>
+
+
+  <!-- 选择城市 -->
+  <view class='sear_city' wx:if="{{flag==1}}">
+    <view class='position_city'>
+      <view>图标--</view>
+      <view> 苏州--</view>
+      <view>当前定位城市</view>
+    </view>
+    <view class='city_list' wx:for="{{cityList}}" wx:key="index" data-index='{{index}}'>
+      <view class='city_item' bindtap="chooseOneCity" id="{{index}}">{{item}}</view>
+    </view>
+  </view>
+
+  <!-- 附近 -->
+  <view class='nearby_content' wx:elif="{{flag==0}}">
+    <view class='nearby_title'>
+      <view>图标--</view>
+      <view>附近</view>
+    </view>
+    <view class='current_location city_item'>
+      <view class='left'>
+        <view>喜悦-尚中心</view>
+        <view>当前定位地址</view>
+      </view>
+      <view class='right'>
+        <view>图标</view>
+        <view>重新定位</view>
+      </view>
+    </view>
+    <view class='city_list' wx:for="{{nearbyAddressList}}" wx:key="index" data-index='{{index}}'>
+      <view class='city_item' id="{{index}}">{{item}}</view>
+    </view>
+  </view>
+
+
+  <!-- 输入框获取焦点 -->
+  <view wx:else="{{flag==2}}">
+    <view class='search_content' wx:for="{{searchAddress}}" wx:key="index" data-index='{{index}}'>
+      <view class='search_result'>
+        <view>喜悦-尚中心</view>
+        <view class='distance'>
+          <view> 江苏苏州市吴中区越溪</view>
+          <view>75m</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

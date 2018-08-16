@@ -1,0 +1,17 @@
+<!--pages/systemNews/systemNews.wxml-->
+
+<view class="system-container">
+  <view class="item">
+    <view class="head">
+      <view class="title">
+         探狗发布啦！超级优惠等你来拿
+      </view>
+      <view class="date">
+        2018.5.10
+      </view>
+    </view>
+    <view class="content">
+      精品猫咪酒店别墅体验券，爱宠游泳套餐券，美容美甲优惠多多
+    </view>
+  </view>
+</view>

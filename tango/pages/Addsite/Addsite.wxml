@@ -1,0 +1,38 @@
+<!--pages/Addsite/Addsite.wxml-->
+<view class='addsite_content'>
+  <view class='name'>
+    <text>姓名</text>
+    <input placeholder="请输入姓名" maxlength='10' bindinput="nameInput" value="{{name}}"></input>
+  </view>
+  <view class='area'>
+    <text>地区</text>
+    <picker class="picker" mode="region" bindchange='getArea'>
+      <view class="area-wrapper">
+        <view class="item">
+          <text class='area_text'>{{area[0]}}</text>
+        </view>
+        <view class="item_middle">
+          <text class='area_text'>{{area[1]}}</text>
+        </view>
+        <view class="item_last">
+          <text class='area_text'>{{area[2]}}</text>
+        </view>
+      </view>
+    </picker>
+  </view>
+  <view class='tel'>
+    <text>手机号</text>
+    <input placeholder="请输入手机号" maxlength='11' type='number' style=' margin-left:56rpx;' bindinput="phnumberInput" value="{{phnumber}}"></input>
+  </view>
+  <view class='street'>
+    <text>详细地址</text>
+    <input placeholder="详细地址(街道、小区门牌号)" maxlength='25' style='margin-left:28rpx;' bindinput="streetInput" value="{{street}}"></input>
+  </view>
+  <button class='confirm_btn' wx:if="{{modify!=1}}" bindtap='_add_address'>
+    <text>保存</text>
+  </button>
+  <view class='confirm_btn' wx:else="" style='background:#f4f4f4'>
+    <button style=' width: 330rpx;' type="warn" bindtap='_del_address'>删除</button>
+    <button style=' width: 330rpx;' type="primary" bindtap='_modify_address'>确定</button>
+  </view>
+</view>

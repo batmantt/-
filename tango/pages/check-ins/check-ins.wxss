@@ -1,0 +1,335 @@
+/* pages/check-ins/check-ins.wxss */
+
+.check-ins-container {
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+.sign-in-area {
+  height: 560rpx;
+  margin-bottom: 28rpx;
+  background: url('https://tango.heeyhome.com/upload/images/img_banner_qiandao@2x.png');
+  background-size: 750rpx 560rpx;
+}
+
+.top_icon {
+  width: 220rpx;
+  height: 44rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.supplement_sign {
+  width: 140rpx;
+  height: 44rpx;
+  color: #f32c31;
+  font-size: 24rpx;
+  background: #fff;
+  text-align: center;
+  line-height: 44rpx;
+  border-radius: 25px;
+  margin: 28rpx 24rpx;
+}
+
+.top_icon .image01 {
+  margin: 36rpx 0;
+}
+
+.sign_icon {
+  display: flex;
+  width: 550rpx;
+  height: 52rpx;
+  background: wheat;
+  margin: 10rpx 95rpx 41rpx 95rpx;
+  background: url('https://tango.heeyhome.com/upload/images/icon_back_20180613095217.png');
+  background-size: 73.31vw 52rpx;
+}
+
+.sign_button {
+  width: 412rpx;
+  height: 84rpx;
+  background: #ff6065;
+  color: #fff;
+  text-align: center;
+  line-height: 84rpx;
+  border-radius: 42px;
+  margin-left: 169rpx;
+}
+
+.continuity_sign {
+  width: 272rpx;
+  height: 50rpx;
+  background: #ff6065;
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 25px;
+  opacity: 0.5;
+  margin: 190rpx 239rpx 70rpx 239rpx;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.fixed_addsign {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.sign_area_success {
+  width: 660rpx;
+  height: 674rpx;
+  background: #fff;
+  margin: 223rpx 45rpx;
+  border-radius: 10px;
+}
+
+.sign_area_success .a {
+  display: flex;
+  position: absolute;
+  height: 70rpx;
+  width: 660rpx;
+  color: #ffa451;
+  font-size: 50rpx;
+  margin-top: 42rpx;
+  line-height: 70rpx;
+  letter-spacing: 2px;
+}
+
+.sign_area_success .a .a_text {
+  margin: 0 auto;
+}
+
+.sign_area_success .b {
+  display: flex;
+  position: absolute;
+  width: 660rpx;
+  height: 246rpx;
+  margin: 167rpx 0rpx;
+}
+
+.sign_area_success .b .b_text {
+  margin: 0 auto;
+}
+
+.sign_area_success .c {
+  width: 660rpx;
+  display: flex;
+  position: absolute;
+  margin: 486rpx 0rpx;
+  color: #666;
+  font-size: 28rpx;
+  letter-spacing: 1px;
+}
+
+.sign_area_success .c .c_text {
+  margin: 0 auto;
+}
+
+.sign_area_success .d {
+  display: flex;
+  position: absolute;
+  width: 560rpx;
+  height: 80rpx;
+  margin: 560rpx 50rpx;
+}
+
+.sign_area_success .d .btn {
+  width: 254rpx;
+  height: 80rpx;
+  background: #fbefe9;
+  color: #ff8953;
+  border: 1rpx solid #ff8953;
+  border-radius: 10rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  letter-spacing: 2px;
+}
+
+.reversal {
+  width: 640rpx;
+  height: 433rpx;
+  margin: 36rpx 10rpx;
+}
+
+.click_three {
+  width: 640rpx;
+  height: 200rpx;
+  margin-bottom: 33rpx;
+  display: flex;
+}
+
+.img_weifanpai {
+  width: 160rpx;
+  height: 200rpx;
+  margin-left: 40rpx;
+  background: red;
+  border-radius: 5rpx;
+  font-size: 30rpx;
+  color: #fffefe;
+  writing-mode: tb-rl;
+  text-align: center;
+  line-height: 160rpx;
+  background: url('https://tango.heeyhome.com/upload/images/img_weifanpai@2x.png');
+  background-size: 160rpx 200rpx;
+  /* animation: headRotate 2S linear infinite; */
+}
+
+/* @keyframes headRotate{
+  0% {transform: rotateX(0deg);}
+  50% {transform: rotateX(180deg);}
+  100% {transform: rotateX(360deg);}
+} */
+
+.img_fanpai_xuanzhong, .img_fanpai_weixuanzhong {
+  width: 160rpx;
+  height: 200rpx;
+  margin-left: 40rpx;
+  background: wheat;
+  border-radius: 5rpx;
+  font-size: 28rpx;
+  color: #fffefe;
+  text-align: center;
+  writing-mode: horizontal-tb;
+  background: url('https://tango.heeyhome.com/upload/images/img_fanpai_weixuanzhong@2x.png');
+  background-size: 160rpx 200rpx;
+}
+
+.jifen {
+  margin-top: 70rpx;
+}
+
+.select {
+  display: flex;
+  position: relative;
+  width: 68rpx;
+  height: 55rpx;
+  background: url('https://tango.heeyhome.com/upload/images/duigou_20180612155941.png');
+  background-size: 68rpx 55rpx;
+  margin-top: -24rpx;
+  margin-left: 78rpx;
+}
+
+.fixed_btn {
+  width: 560rpx;
+  height: 80rpx;
+  display: flex;
+  margin-left: 50rpx;
+}
+
+.confirm_btn, .share_btn {
+  width: 254rpx;
+  height: 80rpx;
+  background: #fbefe9;
+  font-size: 28rpx;
+  color: #ff8953;
+  text-align: center;
+  line-height: 80rpx;
+  border: 1rpx solid #ff8953;
+  border-radius: 10rpx;
+}
+
+.share_btn {
+  margin-left: 52rpx;
+}
+
+/* ----------------------------------------------------- */
+
+.image-text-area {
+  display: flex;
+  position: absolute;
+  height: auto;
+  background: white;
+}
+
+.image-area {
+  width: 682rpx;
+  height: 366rpx;
+  margin: 34rpx;
+}
+
+.text-area {
+  width: 682rpx;
+  height: 60rpx;
+  margin: 34rpx 34rpx 0rpx 34rpx;
+  font-size: 30rpx;
+  color: #333;
+  letter-spacing: 1rpx;
+}
+
+/* 关闭按钮 */
+
+.close_btn {
+  width: 54rpx;
+  height: 54rpx;
+  display: flex;
+  position: absolute;
+  margin: 80rpx 647rpx;
+}
+
+/* 七天弹出页面 */
+
+.seven_day_sign {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.seven_day_sign .top {
+  display: flex;
+  position: absolute;
+  width: 750rpx;
+  height: 110rpx;
+  margin: 158rpx 0rpx;
+}
+
+.seven_day_sign .top image {
+  margin: auto;
+}
+
+.seven_day_sign .second {
+  display: flex;
+  width: 750rpx;
+  height: 530rpx;
+  margin: 240rpx 0rpx;
+}
+
+.seven_day_sign .second .second_content {
+  width: 660rpx;
+  height: 530rpx;
+  margin: auto;
+  background: #fff;
+}
+
+.seven_day_sign .second .second_content #img {
+  display: flex;
+  width: 512rpx;
+  height: 160rpx;
+  margin: 101rpx 74rpx 66rpx 74rpx;
+  justify-content: space-between;
+}
+
+.seven_day_sign .text {
+  display: flex;
+  width: 660rpx;
+  color: #666;
+  font-size: 30rpx;
+}
+
+.seven_day_sign .text #zz {
+  margin: auto;
+}

@@ -1,0 +1,142 @@
+/* pages/userCenter/userCenter.wxss */
+
+.usercenter-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+}
+
+.usercenter-container .top {
+  height: 236rpx;
+  background: pink;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+  /* background-image: url('../../images/minetop.png');
+  background-size:100% 100%; */
+}
+
+.usercenter-container .top .img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.usercenter-container .top .head-img {
+  position: absolute;
+  top: 90rpx;
+  left: 270rpx;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10rpx solid #fcf2bd;
+}
+
+.usercenter-container .top .head-img .img {
+  width: 100%;
+  height: 100%;
+}
+
+.usercenter-container .sign-info {
+  height: 117rpx;
+  background: #ffd300;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding-bottom: 25rpx;
+}
+
+.item1 {
+  color: #ffd300;
+}
+
+.usercenter-container .sign-info .item {
+  text-align: center;
+}
+
+.usercenter-container .sign-info .item .num {
+  font-size: 50rpx;
+}
+
+.usercenter-container .sign-info .text {
+  font-size: 28rpx;
+}
+
+.usercenter-container .sign-info .text-special {
+  font-size: 30rpx;
+}
+
+.usercenter-container .operation-con {
+  background: #f4f4f4;
+  flex: 1 1 auto;
+}
+
+.usercenter-container .operation-con .user-top {
+  margin: 20rpx 0;
+  background: #fff;
+}
+
+.usercenter-container .operation-con .item {
+  height: 98rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  font-size: 28rpx;
+  justify-content: space-between;
+  margin: 0 24rpx;
+}
+
+.usercenter-container .operation-con .item_login {
+  height: 98rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  font-size: 28rpx;
+  justify-content: space-between;
+  /* margin: 0 24rpx; */
+  background: #fff;
+  border-radius: 0rpx;
+}
+
+.usercenter-container .operation-con .item_login .head {
+  display: flex;
+  align-items: center;
+}
+
+.usercenter-container .operation-con .item_login .icon-img {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 24rpx;
+}
+
+.usercenter-container .operation-con .item .head {
+  display: flex;
+  align-items: center;
+}
+
+.usercenter-container .operation-con .user-bottom {
+  background: #fff;
+}
+
+.usercenter-container .operation-con .item .icon-img {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 24rpx;
+}
+
+.icon-img-arrow {
+  width: 14rpx;
+  height: 26rpx;
+}
+
+button::after {
+  border: none;
+}

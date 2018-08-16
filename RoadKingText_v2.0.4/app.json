@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/flashSale/flashSale",
+    "pages/mine/mine",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#ea534a",
+    "list": [
+      {
+        "pagePath": "pages/flashSale/flashSale",
+        "text": "抢购",
+        "iconPath": "pages/image/icon/flash_sale_no.png",
+        "selectedIconPath": "pages/image/icon/flash_sale.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/image/icon/mine_no.png",
+        "selectedIconPath": "pages/image/icon/mine.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

@@ -1,0 +1,15 @@
+<!--pages/qrcode/qrcode.wxml-->
+<view class="scroll_box">
+  <scroll-view class="scroll-view_x" scroll-x style="width: auto;overflow:hidden;">
+    <view class="item_list" wx:for="{{back_list}}" wx:key="id" data-index='{{index}}'>
+      <view class='name'>{{back_list[index].cardName}}</view>
+      <view class='title'>官方推荐二维码</view>
+      <view class="item_book_img">
+        <image src="{{back_list[index].recomendCode}}"></image>
+      </view>
+      <view class='btn'>
+        <button style=' width: 514rpx;height:90rpx;' bindtap='to_apply' id='{{index}}'>点击申请我的专属二维码</button>
+      </view>
+    </view>
+  </scroll-view>
+</view>

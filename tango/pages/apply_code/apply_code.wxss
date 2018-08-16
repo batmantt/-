@@ -1,0 +1,186 @@
+/* pages/apply_code/apply_code.wxss */
+
+.addsite_content {
+  min-height: 100vh;
+  background: #f4f4f4;
+  position: absolute;
+}
+
+.addsite_content text {
+  margin-left: 24rpx;
+}
+
+.addsite_content .name, .area, .tel, .street, .confirm_btn {
+  font-size: 28rpx;
+  width: 702rpx;
+  height: 100rpx;
+  background: #fff;
+  margin: 28rpx 24rpx 0 24rpx;
+  position: relative;
+  border-radius: 5rpx;
+  display: flex;
+  float: left;
+  line-height: 100rpx;
+}
+
+input {
+  font-size: 28rpx;
+  line-height: 100rpx;
+  margin: auto;
+  margin-left: 84rpx;
+  width: 530rpx;
+}
+
+.item {
+  margin-left: 84rpx;
+}
+
+.item_middle, .item_last {
+  margin-left: 10rpx;
+}
+
+.addsite_content .confirm_btn {
+  height: 90rpx;
+  background: #ffd300;
+  color: #fff;
+  font-size: 30rpx;
+  margin-top: 56rpx;
+}
+
+.addsite_content .confirm_btn text {
+  margin: auto;
+}
+
+.area-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+button {
+  background: orange;
+  width: 702rpx;
+  color: #fff;
+}
+
+.applyStatus {
+  min-height: 100vh;
+  width: 100%;
+  background: #f4f4f4;
+}
+
+.applyStatus .box {
+  width: 618rpx;
+  height: 1000rpx;
+  background: #fff;
+  position: absolute;
+  margin: 84rpx 66rpx;
+  border-radius: 20rpx;
+  display: flex;
+}
+
+.box .left {
+  width: 62rpx;
+  height: 550rpx;
+  margin: 170rpx 132rpx;
+}
+
+.jindutiao {
+  position: absolute;
+  margin-left: 27rpx;
+  margin-top: -8rpx;
+}
+
+.left .shenhe {
+  margin-top: 172rpx;
+}
+
+.right {
+  width: 300rpx;
+  height: 550rpx;
+  position: relative;
+  margin-top: 170rpx;
+  margin-left: -90rpx;
+  font-size: 30rpx;
+}
+
+.a, .b, .c {
+  color: #00984b;
+}
+
+.c {
+  margin-top: 175rpx;
+}
+
+.d {
+  margin-top: 205rpx;
+  color: #cdcbcc;
+}
+
+/* 成功申请二维码 */
+
+.scroll_box {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding: 20rpx;
+  background: #f4f4f4;
+  white-space: nowrap;
+}
+
+.scroll-view_x {
+  width: 100%;
+  height: 1000rpx;
+  margin-top: 80rpx;
+  margin-left: 50rpx;
+}
+
+.item_list {
+  width: 618rpx;
+  height: 1000rpx;
+  margin-right: 23rpx;
+  display: inline-block;
+  background: #fff;
+  border-radius: 20rpx;
+}
+
+.item_list .name {
+  width: 618rpx;
+  font-size: 45rpx;
+  color: green;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 130rpx;
+}
+
+.item_list .title {
+  width: 618rpx;
+  font-size: 37rpx;
+  color: green;
+  text-align: center;
+  margin: 28rpx 0 76rpx;
+}
+
+.item_book_img {
+  width: 618rpx;
+  height: 388rpx;
+  text-align: center;
+}
+
+.item_list image {
+  width: 388rpx;
+  height: 388rpx;
+  border: 30rpx solid #f4f4f4;
+  border-radius: 30rpx;
+}
+
+.item_list .btn {
+  margin-top: 124rpx;
+  width: 618rpx;
+  color: #666;
+  font-size: 30rpx;
+  text-align: center;
+  letter-spacing: 1rpx;
+}

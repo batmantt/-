@@ -1,0 +1,25 @@
+<!--pages/integralList/integralList.wxml-->
+
+<scroll-view class="integral-list-container" scroll-y="true">
+  <view class="integral-item" wx:for="{{itergralList}}" wx:key="id">
+    <view class='time'>
+      <view class='date'>
+        <view class='gmvTime'>{{itergralList[index].newDate}}</view>
+        <view>{{itergralList[index].newDate1}}</view>
+      </view>
+    </view>
+    <view class='right_info'>
+      <view class="gt">
+        <text>GMV</text>
+        <text style='color:#ff8953;margin-bottom:2rpx;'>{{item.gmvValue}}</text>
+      </view>
+      <view class="et">
+        <text>增长积分</text>
+        <text style='color:#ff8953'>{{item.integralValue}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="no-message" wx:if="{{noMessage}}">
+    暂无数据
+  </view>
+</scroll-view>

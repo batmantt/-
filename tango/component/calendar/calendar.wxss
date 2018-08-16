@@ -1,0 +1,64 @@
+.calendar-container {
+  height: 496rpx;
+  box-sizing: border-box;
+  border-radius: 12rpx;
+  background: #fee580;
+  padding: 0 20rpx;
+  font-size:28rpx;
+}
+
+.calendar-container .date-month {
+  padding:38rpx 0 27rpx 0;
+  color: #7b462c;
+  font-size: 32rpx;
+  text-align: center;
+  font-weight: 900;
+  font-family: 'JCuYuan';
+}
+
+.calendar-container .date-week {
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color:#000;
+}
+
+.calendar-container .date-week .week-item {
+  text-align: center;
+  height: 60rpx;
+  margin-top: 15rpx;
+  width: 89rpx;
+}
+
+.calendar-container .date-day {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.calendar-container .date-day .day-item {
+  height: 75rpx;
+  width: 89rpx;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.calendar-container .date-day .day-item .day-item-circle{
+  width:64rpx;
+  height:64rpx;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:50%;
+}
+ /* 动态切换class */
+
+ /* 是否是这个月的 */
+.not-this-month{
+  color:#888;
+}
+ /* 签到过才是白色的背景 */
+.signed {
+  background: #fff;
+}

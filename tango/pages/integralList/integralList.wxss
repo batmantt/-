@@ -1,0 +1,64 @@
+/* pages/integralList/integralList.wxss */
+
+.integral-list-container {
+  background: #f4f4f4;
+  height: 100vh;
+  width: 100vw;
+  /* font-size: 30rpx; *//* color: #000; *//* padding:28rpx 24rpx; *//* box-sizing: border-box; */
+}
+
+.integral-list-container .integral-item {
+  height: 90rpx;
+  width: 702rpx;
+  background: #fff;
+  border-radius:5rpx;
+  /* margin-bottom: 28rpx; */
+  display: flex;
+  /* align-items: center;  *//* justify-content: space-between; *//* padding:24rpx; */
+  margin-left: 24rpx;
+  margin-top: 28rpx;
+}
+
+.time {
+  width: 120rpx;
+  height: 90rpx;
+  background: #fbf3be;
+  font-size: 22rpx;
+  display: flex;
+  align-items: center;
+  border-radius:5rpx;
+}
+
+.date {
+  font-size: 22rpx;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.right_info {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  font-size: 30rpx;
+  letter-spacing: 2rpx;
+  padding: 24rpx;
+  width: 582rpx;
+}
+
+.no-message {
+  text-align: center;
+  font-size: 36rpx;
+  color: #666;
+  height: 200rpx;
+  line-height: 200rpx;
+}
+
+/* 负数的样式 */
+
+.add {
+  color: #ff8953;
+}
+
+.reduce {
+  color: #4977de;
+}

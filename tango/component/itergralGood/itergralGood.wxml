@@ -1,0 +1,23 @@
+<!-- <view class="itergral-good-container">
+  <view class="image">
+    <image class="img" src="{{good_src}}"></image>
+  </view>
+  <view class="good-info">
+    <view class="convert-infos">
+      <view class="title">{{good_title}}</view> -->
+      <!-- <view class="remind">这里是一些用券信息</view> -->
+      <!-- <view class="price">原价{{good_price}}</view>
+    </view>
+    <view>
+    </view>
+    <view class="convert-good">
+      <view class="need-itergral">
+        <image class="img" src="../../images/qq.png"></image>
+        x{{good_itergral}}
+      </view>
+      <view class="btn-convert" bindtap='Ex_goods'>
+        立即兑换
+      </view>
+    </view>
+  </view>
+</view> -->

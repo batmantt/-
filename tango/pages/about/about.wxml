@@ -1,0 +1,13 @@
+<!--pages/about/about.wxml-->
+
+<view class="about-container">
+  <view class="logo-wrapper">
+    <image class="img" src="../../images/itgral.png"></image>
+  </view>
+  <view class="desc">
+    trimRight()和trimLeft()：trimRight 只负责去除右边的空白，其它地方一概不管。 trimLeft 只负责去除右边的空白，其它地方也一概不关。
+  </view>
+  <view class="desc">
+  上篇文章写了添加扩展性方面的重构，讲到了开放封闭原则。学习的步伐不能就此停止，今天的文章，将会提及开发的另一个原则：单一职责原则。通俗点说就是一个函数只做一件事，下面将会通过几个实例，探究单一职责原则。
+  </view>
+</view>

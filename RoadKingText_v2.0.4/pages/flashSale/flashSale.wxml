@@ -1,0 +1,46 @@
+<view class='body' style='background-color: {{imageinfo[0].color}}'>
+
+  <!-- 顶部图片 -->
+  <view class='banner'>
+    <image src='{{imageinfo[0].imageBanner}}' mode="scaleToFill" style='height: 360rpx;width: 750rpx'></image>
+  </view>
+
+
+  <!-- 商品 -->
+  <view class='goods_list' wx:for="{{flashSale_info.list}}" wx:key="navItems" wx:for-item="item" data-index='{{index}}'>
+    <view class='goods'>
+      <view class='shopping_img'>
+        <image src='{{flashSale_info.list[index].commodityImage}}' mode="scaleToFill" style='height:190rpx;width:190rpx'></image>
+      </view>
+      <view class='shopping_info'>
+        <text class='shopping-name'>{{flashSale_info.list[index].commodityName}}</text>
+        <view class='text-progress'>
+          <text>共{{flashSale_info.list[index].commodityTotal}}件</text>
+          <view class='progress'>
+            <progress percent="{{flashSale_info.list[index].percentage}}" stroke-width="8" stroke-="8" activeColor="#F9D447" backgroundColor="#E5E5E5" />
+          </view>
+        </view>
+        <view class='text-time'>
+          <text class='text-tip'>{{flashSale_info.list[index].commodityNote}}</text>
+        </view>
+        <view class='text-price'>
+          <text class='current-price' bindtap='Immediat'>¥{{flashSale_info.list[index].commoditySpecialPrice}}</text>
+          <view class='previous-prices'>
+          <view>¥{{flashSale_info.list[index].commodityOriginalPrice}}</view>
+          <!-- 原价下划线 -->
+          <text>¥{{flashSale_info.list[index].commodityOriginalPrice}}</text>
+          </view>
+          <button wx:if="{{userInfo==null}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">立即抢购</button>
+          <button wx:elif="{{shopping_info}}==''" bindtap='Immediate_buy' id="{{index}}">立即抢购</button>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 底部图片 -->
+  <view class='active_info'>
+    <image src='{{imageinfo[0].imageProinfo}}' mode="scaleToFill"bindload="imageLoad" style='width:750rpx;height:{{viewHeight}}px;'></image>
+    <image src='{{imageinfo[0].imageBuyflow}} ' mode="scaleToFill" style='height:550rpx;width:100%'></image>
+  </view>
+</view>

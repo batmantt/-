@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<image src='https://tango.heeyhome.com/upload/images/loadback.png' mode="scaleToFill"></image>
+<view class="container">
+  <view class="btn-wrapper">
+    <button class="btn" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录Tango </button>
+  </view>
+</view>

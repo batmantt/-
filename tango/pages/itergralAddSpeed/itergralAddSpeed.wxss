@@ -1,0 +1,51 @@
+/* pages/itergralAddSpeed/itergralAddSpeed.wxss */
+
+.itergral-add-speed-container {
+  height: 100vh;
+  padding: 28rpx 24rpx;
+  background: #f4f4f4;
+  font-size: 30rpx;
+  color: #000;
+  box-sizing: border-box;
+}
+
+.itergral-add-speed-container .item {
+  margin-bottom: 28rpx;
+  background: #fff;
+  height: 180rpx;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 24rpx;
+  justify-content: space-between;
+  border-radius: 5rpx;
+}
+
+.itergral-add-speed-container .item .speed-infos {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.itergral-add-speed-container .item .speed-infos .title {
+  font-size: #000;
+}
+
+.itergral-add-speed-container .item .speed-infos .text {
+  font-size: 26rpx;
+  color: #999;
+  margin-top: 18rpx;
+}
+
+.itergral-add-speed-container .item .speed-val {
+  color: #ff8953;
+  font-size: 30rpx;
+}
+
+.no-message {
+  text-align: center;
+  font-size: 36rpx;
+  color: #666;
+  height: 200rpx;
+  line-height: 200rpx;
+}

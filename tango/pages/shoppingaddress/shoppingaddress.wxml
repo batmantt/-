@@ -1,0 +1,42 @@
+<!--pages/shoppingaddress/shoppingaddress.wxml-->
+<view class='shppingaddress-container'>
+  <!-- 没有收获地址 -->
+  <view class='no_address' wx:if="{{!exists}}">
+    <view class='img'>
+      <image src='/images/no_address_20180629173739.png ' style=' height: 172rpx;width: 168rpx;'></image>
+    </view>
+    <view class='text'>
+      <text>您还没有收货地址，请点击底部按钮前往添加</text>
+    </view>
+    <view class='add_address_btn' bindtap='_add_address'>
+      添加地址
+    </view>
+  </view>
+  <view class='has_address' wx:else="">
+    <view class='one_address' wx:for="{{addresslist}}" wx:key="id" data-index='{{index}}'>
+      <view class='name_number'>
+        <view class='name'>
+          <text>{{addresslist[index].name}}</text>
+        </view>
+        <view class='number'>
+          <text>{{addresslist[index].phoneNum}}</text>
+        </view>
+      </view>
+      <view class='street'>
+        <text>{{addresslist[index].province}}{{addresslist[index].city}}{{addresslist[index].area}}{{addresslist[index].addressDetails}}</text>
+      </view>
+      <view class='modify_button' bindtap='modify_button' id='{{index}}'>
+        <image src='/images/icon_bianji@2x.png ' style='  height: 46rpx;width: 46rpx;'></image>
+      </view>
+      <view class='def_address' wx:if="{{addresslist[index].defaultAddress==1}}">
+        <image src='/images/icon_address@2x.png.png' style='height: 30rpx;width: 30rpx;'></image>
+        <text>默认地址</text>
+      </view>
+    </view>
+    <view class='boot'>
+    </view>
+    <view class='add_address_btn' bindtap='_add_address'>
+      添加地址
+    </view>
+  </view>
+</view>

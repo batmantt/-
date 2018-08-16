@@ -1,0 +1,20 @@
+<!--pages/itergralAddSpeed/itergralAddSpeed.wxml-->
+
+<scroll-view class="itergral-add-speed-container" scroll-y="true" bindscrolltolower="upper">
+  <view class="item" wx:for="{{speedList}}" wx:key="id">
+    <view class="speed-infos">
+      <view class="title">
+        {{item.integralSpeedStartTime}}{{item.integralSpeedEndTime}}
+      </view>
+      <view class="text">
+        {{item.integralSpeedContent}}
+      </view>
+    </view>
+    <view class="speed-val">
+        {{'+' + item.integralSpeedValue}}
+    </view>
+  </view>
+   <view class="no-message" wx:if="{{noMessage}}">
+    暂无数据
+  </view>
+</scroll-view>

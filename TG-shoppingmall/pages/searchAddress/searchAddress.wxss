@@ -1,0 +1,58 @@
+/* pages/searchAddress/searchAddress.wxss */
+
+.content {
+  font-size: 24rpx;
+}
+
+.top_search {
+  display: flex;
+  padding: 20rpx;
+}
+
+.input_box {
+  display: flex;
+  background-color: #f4f4f4;
+}
+
+input {
+  width: 300rpx;
+}
+
+.position_city {
+  display: flex;
+  padding: 50rpx;
+}
+
+.city_item {
+  border-bottom: 1px solid #f4f4f4;
+  padding: 20rpx 50rpx;
+}
+
+.nearby_title {
+  display: flex;
+  padding: 10rpx;
+}
+
+.current_location {
+  display: flex;
+  justify-content: space-between;
+}
+
+.current_location .right {
+  text-align: center;
+}
+
+/* <!-- 输入框获取焦点 --> */
+
+.search_content {
+  padding: 20rpx 50rpx;
+}
+
+.search_result {
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.distance {
+  display: flex;
+  justify-content: space-between;
+}

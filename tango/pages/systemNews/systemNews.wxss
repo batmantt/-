@@ -1,0 +1,35 @@
+/* pages/systemNews/systemNews.wxss */
+.system-container{
+  min-height:100vh;
+  font-size:30rpx;
+  padding:28rpx 24rpx;
+  background: #f4f4f4;
+  box-sizing:border-box;
+}
+.system-container .item{
+  height:180rpx;
+  box-sizing:border-box;
+  padding:0 24rpx;
+  background: #fff;
+  border-radius: 5rpx;
+}
+.system-container .item .head{
+  display:flex;
+  justify-content: space-between;
+  padding:32rpx 0 20rpx 0;
+}
+.system-container .item .head .title{
+  width:500rpx;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.system-container .item .head .date{
+  font-size:24rpx;
+  color:#999;
+}
+.system-container .item .content{
+  line-height: 39rpx;
+  color:#999;
+  font-size:26rpx;
+}

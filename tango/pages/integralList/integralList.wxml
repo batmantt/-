@@ -1,0 +1,24 @@
+<!--pages/integralList/integralList.wxml-->
+
+<scroll-view class="integral-list-container" scroll-y="true" bindscrolltolower="upper">
+  <view class="integral-item" wx:for="{{itergralList}}" wx:key="id">
+    <view class='time'>
+      <view class='date'>
+        <view>{{item.newDate}}</view>
+        <view>{{item.newDate01}}</view>
+      </view>
+    </view>
+    <view class='right_info'>
+      <view class="item-reason">
+        {{item.integralName}}
+      </view>
+      <view class="item-val {{item.isAdd == true ? 'add' : 'reduce'}}">
+        {{item.isAdd == true ? '+' + item.integralValue : item.integralValue}}
+      </view>
+    </view>
+
+  </view>
+  <view class="no-message" wx:if="{{noMessage}}">
+    暂无数据
+  </view>
+</scroll-view>

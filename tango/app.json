@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/check-ins/check-ins",
+    "pages/rules-of-sign/rules-of-sign",
+    "pages/sign/sign",
+    "pages/userSetup/userSetup",
+    "pages/myorder/myorder",
+    "pages/integralMall/integralMall",
+    "pages/userCenter/userCenter",
+    "pages/systemNews/systemNews",
+    "pages/qrcode/qrcode",
+    "pages/itergralAddSpeed/itergralAddSpeed",
+    "pages/integralList/integralList",
+    "pages/about/about",
+    "pages/purchase/purchase",
+    "pages/test/test",
+    "pages/logs/logs",
+    "pages/article/article",
+    "pages/shoppingaddress/shoppingaddress",
+    "pages/Addsite/Addsite",
+    "pages/salesman_integral/salesman_integral",
+    "pages/apply_code/apply_code",
+    "pages/submit_apply_success/submit_apply_success"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffd300",
+    "navigationBarTitleText": "签到",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bbb",
+    "selectedColor": "#f9d648",
+    "list": [
+      {
+        "pagePath": "pages/check-ins/check-ins",
+        "text": "签到",
+        "iconPath": "./images/click.png",
+        "selectedIconPath": "./images/clickhover.png"
+      },
+      {
+        "pagePath": "pages/purchase/purchase",
+        "text": "Tango",
+        "iconPath": "./images/clock.png",
+        "selectedIconPath": "./images/clockhover.png"
+      },
+      {
+        "pagePath": "pages/userCenter/userCenter",
+        "text": "我的",
+        "iconPath": "./images/mine.png",
+        "selectedIconPath": "./images/minehover.png"
+      }
+    ]
+  }
+}

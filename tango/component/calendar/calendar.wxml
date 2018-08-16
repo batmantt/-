@@ -1,0 +1,15 @@
+<view class="calendar-container">
+  <view class="date-month">
+    2018.06
+  </view>
+  <view class="date-week">
+    <view class="week-item" wx:for="{{week}}" wx:key="id">{{item.val}}</view>
+  </view>
+  <view class="date-day">
+    <view class="day-item" wx:for="{{list}}" wx:key="id">
+      <view class="day-item-circle {{item.isPass == true ? 'signed' : ''}} {{item.isThisMonth == true ? '' : 'not-this-month'}}" data-day='{{item}}' bindtap="clickSign">
+        <text>{{item.day}}</text>
+      </view>
+    </view>
+  </view> 
+</view>

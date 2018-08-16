@@ -1,0 +1,173 @@
+/* pages/userSetup/userSetup.wxss */
+
+.user-setup-container {
+  min-height: 100vh;
+  font-size: 30rpx;
+  padding: 28rpx 24rpx;
+  background: #f4f4f4;
+  box-sizing: border-box;
+}
+
+.user-setup-container .form-container .line-wrapper {
+  height: 100rpx;
+  margin-bottom: 28rpx;
+  background: #fff;
+  padding: 0 21rpx;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+.user-setup-container .form-container .line-wrapper .label {
+  margin-right: 84rpx;
+  width: 90rpx;
+}
+
+.user-setup-container .form-container .line-wrapper.phone {
+  margin-bottom: 56rpx;
+}
+
+.user-setup-container .form-container .line-wrapper .input {
+  color: #000;
+  height: 100%;
+  width: 560rpx;
+}
+
+.user-setup-container .form-container .line-wrapper .write-phone {
+  color: #999;
+  margin-left: -10rpx;
+}
+
+.user-setup-container .form-container .line-wrapper .area-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100rpx;
+  width: 500rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.user-setup-container .form-container .line-wrapper .area-wrapper .item.middle {
+  margin: 0 110rpx;
+}
+
+/* 性别 wzb */
+
+.sex {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100rpx;
+  width: 500rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.user-setup-container .form-container .btn-save {
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  border-radius: 5rpx;
+  color: #fff;
+  background: #ffd300;
+}
+
+/* 悬浮框样式 */
+
+.user-setup-container .fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.user-setup-container .fixed .bind-phone {
+  margin: 320rpx auto;
+  width: 580rpx;
+  height: 460rpx;
+  background: #fff;
+  padding: 0 40rpx;
+  border-radius: 5rpx;
+  box-sizing: border-box;
+}
+
+.user-setup-container .fixed .bind-phone .title {
+  padding: 38rpx 0;
+  font-size: 28rpx;
+  color: #000;
+}
+
+.user-setup-container .fixed .bind-phone .phone-num-wrapper {
+  margin-bottom: 30rpx;
+}
+
+.user-setup-container .fixed .bind-phone .phone-num-wrapper .input-number {
+  height: 88rpx;
+  /* width: 480rpx; */
+  border: 2rpx solid #999;
+  border-radius: 5rpx;
+  font-size: 24rpx;
+  /* box-sizing: border-box; */
+  padding: 0 24rpx;
+  margin-left: 5rpx;
+}
+
+.user-setup-container .fixed .bind-phone .code-wrapper {
+  display: flex;
+  height: 88rpx;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30rpx;
+}
+
+.user-setup-container .fixed .bind-phone .code-wrapper .input-code {
+  width: 250rpx;
+  height: 88rpx;
+  /* box-sizing: border-box; */
+  border: 2rpx solid #999;
+  padding: 0 24rpx;
+  font-size: 24rpx;
+  border-radius: 5rpx;
+  margin-left: 5rpx;
+  /* background: wheat; */
+}
+
+.user-setup-container .fixed .bind-phone .code-wrapper .sen-code {
+  border-radius: 5rpx;
+  width: 164rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  box-sizing: border-box;
+  font-size: 22rpx;
+  text-align: center;
+}
+
+.cansend {
+  border: 2rpx solid #ffd300;
+  background: #fff;
+  color: #ffd300;
+}
+
+.notsend {
+  border: none;
+  background: #999;
+  color: #fff;
+}
+
+.user-setup-container .fixed .bind-phone .btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-setup-container .fixed .bind-phone .btn-group .btn {
+  background: #ffd300;
+  text-align: center;
+  width: 244rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  box-sizing: border-box;
+  color: #fff;
+  border-radius: 5rpx;
+  font-size: 28rpx;
+}

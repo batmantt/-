@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "component-calendar": "/component/calendar/calendar"
+  },
+"backgroundColor": "#ffd300",
+"disableScroll": true
+}

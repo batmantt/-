@@ -1,0 +1,161 @@
+<scroll-view class="check-ins-container" scroll-y="true">
+  <!-- 上半部分--签到 _wzb-->
+  <view class='sign-in-area'>
+    <view class='top_icon'>
+      <view class='supplement_sign' bindtap='rules_of_sign'>补签卡: {{retcardnumber}}</view>
+      <image class='image01' src='https://tango.heeyhome.com/upload/images/icon_hdgz@2x.png.png' style='width: 28rpx; height: 28rpx;' mode="aspectFill" bindtap='rules_of_sign'></image>
+    </view>
+    <view class='continuity_sign'>已连续签到{{s_day}}天</view>
+    <view class='sign_icon'>
+      <view wx:for="{{sign_day}}" wx:for-item="item" wx:for-index="index" wx:key="key">
+        <block wx:if="{{sign_day[index]}}">
+          <image src='https://tango.heeyhome.com/upload/images/icon_yqd@2x.png.png' style='width: 56rpx;height: 52rpx;margin-right: 3.6vw;'></image>
+        </block>
+      </view>
+    </view>
+    <button class="sign_button" wx:if="{{!app_userInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">签到赚积分</button>
+    <button class='sign_button' wx:elif="{{signed}}" bindtap='sign_btn'>已签到</button>
+    <button class='sign_button' wx:else="" bindtap='sign_btn'>签到赚积分</button>
+  </view>
+  <!-- 下半部分--图文 _wzb-->
+  <view class='image-text-area'>
+    <view>
+      <view class='image-area'>
+        <image src='https://tango.heeyhome.com/upload/images/img_banner_wenzhang@2x.png' style=' width: 682rpx; height: 366rpx;' mode="aspectFill" bindtap='article'></image>
+      </view>
+      <view class='text-area'>
+        <text>狗狗智商大测试  你家狗狗及格了么？</text>
+      </view>
+    </view>
+  </view>
+  <!-- 签到弹出部分 -->
+  <view class='fixed' wx:if="{{isFixed}}">
+    <image src='https://tango.heeyhome.com/upload/images/img_pop_top@2x.png' style=' display:flex; position: absolute; width: 548rpx;height:110rpx;margin-left:99rpx;margin-top:144rpx;'></image>
+    <view class="close_btn" bindtap='close_btn'>
+      <image src='/images/close.png' style=' width: 54rpx;height: 54rpx;'></image>
+    </view>
+    <view class='sign_area_success'>
+      <view>
+        <view class='fill' style='width:100rpx;height:57rpx;'>
+        </view>
+        <view class='reversal'>
+          <view class='click_three'>
+            <view class='img_weifanpai' wx:if="{{!flipped}}" catchtap="select00" id="0">
+              请翻牌
+            </view>
+
+            <view class='img_fanpai_weixuanzhong' wx:else="">
+              <view class='jifen'>
+                <text>+{{signReward[0].signRewardValue}}</text>
+                <view>{{signReward[0].signRewardName}}</view>
+                <view wx:if="{{rollback00}}" class='select'> </view>
+              </view>
+            </view>
+            <view class='img_weifanpai' wx:if="{{!flipped}}" catchtap="select01" id="1">
+              请翻牌
+            </view>
+            <view class='img_fanpai_weixuanzhong' wx:else="">
+              <view class='jifen'>
+                <text>+{{signReward[1].signRewardValue}}</text>
+                <view>{{signReward[1].signRewardName}}</view>
+                <view wx:if="{{rollback01}}" class='select'> </view>
+              </view>
+            </view>
+            <view class='img_weifanpai' wx:if="{{!flipped}}" catchtap="select02" id="2">
+              请翻牌
+            </view>
+            <view class='img_fanpai_weixuanzhong' wx:else="">
+              <view class='jifen'>
+                <text>+{{signReward[2].signRewardValue}}</text>
+                <view>{{signReward[2].signRewardName}}</view>
+                <view wx:if="{{rollback02}}" class='select'> </view>
+              </view>
+            </view>
+          </view>
+          <view class='click_three'>
+            <view class='img_weifanpai' wx:if="{{!flipped}}" catchtap="select03" id="3">
+              请翻牌
+            </view>
+            <view class='img_fanpai_weixuanzhong' wx:else="">
+              <view class='jifen'>
+                <text>+{{signReward[3].signRewardValue}}</text>
+                <view>{{signReward[3].signRewardName}}</view>
+                <view wx:if="{{rollback03}}" class='select'> </view>
+              </view>
+            </view>
+            <view class='img_weifanpai' wx:if="{{!flipped}}" catchtap="select04" id="4">
+              请翻牌
+            </view>
+            <view class='img_fanpai_weixuanzhong' wx:else="">
+              <view class='jifen'>
+                <text>+{{signReward[4].signRewardValue}}</text>
+                <view>{{signReward[4].signRewardName}}</view>
+                <view wx:if="{{rollback04}}" class='select'> </view>
+              </view>
+            </view>
+            <view class='img_weifanpai' wx:if="{{!flipped}}" catchtap="select05" id="5">
+              请翻牌
+            </view>
+            <view class='img_fanpai_weixuanzhong' wx:else="">
+              <view class='jifen'>
+                <text>+{{signReward[5].signRewardValue}}</text>
+                <view>{{signReward[5].signRewardName}}</view>
+                <view wx:if="{{rollback05}}" class='select'> </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='fixed_btn'>
+        <view class='confirm_btn' bindtap='confirm_btn'>确定</view>
+        <button class='share_btn' open-type="share">分享获得补签卡</button>
+      </view>
+    </view>
+  </view>
+  <view class='.fixed_addsign' wx:if='{{addsign_isFixed}}'>
+    <view class='sign_area_success'>
+      <view class='a'>
+        <view class='a_text'>
+          使用补签卡
+        </view>
+      </view>
+      <view class='b'>
+        <view class='b_text'>
+          <image src='/images/addsign_20180614194603.png' style='width: 246rpx; height: 246rpx;'></image>
+        </view>
+      </view>
+      <view class='c'>
+        <view class='c_text'>
+          需使用{{nosignday-1}}张补签卡 ({{nosignday-1}}/{{retcardnumber}})
+        </view>
+      </view>
+      <view class='d'>
+        <button class='btn' wx:if='{{no_addcard}}' open-type="share">分享</button>
+        <button class='btn' wx:else='' bindtap='retcard_btn'>确定</button>
+        <button class='btn' bindtap='restart'>重新开始签到</button>
+      </view>
+    </view>
+  </view>
+  <!-- 七天签到 弹出页面 -->
+  <view class='seven_day_sign' wx:if='{{seven_day_sign}}'>
+    <view class='top'>
+      <image src='/images/img_pop_reward@2x.png' style='width: 548rpx;height: 110rpx;'></image>
+    </view>
+    <view class='second'>
+      <view class='second_content'>
+        <view id='img'>
+          <image src='/images/img_jifen@2x.png ' style='width:235rpx;height: 160rpx;'></image>
+          <image src='/images/img_buqianka@2x.png ' style='width: 208rpx;height: 160rpx;'></image>
+        </view>
+        <view class='text'>
+          <text id='zz'>恭喜获得15积分及补签卡一张</text>
+        </view>
+        <view class='btn'>
+          <button bindtap='Noclaim' wx:if="{{receive}}" style='color:#fff;background:#ffa451;width: 500rpx;height: 88rpx;margin-top:48rpx'>点击领取</button>
+          <button bindtap='Alreadyreceived' wx:else="" style='color:#ff8953;background:#fce8df;width: 500rpx;height: 88rpx;margin-top:48rpx'>已领取</button>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</scroll-view>

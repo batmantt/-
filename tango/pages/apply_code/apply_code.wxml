@@ -1,0 +1,69 @@
+<!--pages/apply_code/apply_code.wxml-->
+<view class='addsite_content' wx:if='{{flag}}'>
+  <view class='name'>
+    <text>姓名</text>
+    <input placeholder="请输入姓名" maxlength='10' bindinput="nameInput" value="{{name}}"></input>
+  </view>
+  <view class='name'>
+    <text>银行</text>
+    <input disabled placeholder="请输入银行" maxlength='10' bindinput="backnameInput" value="{{back_name}}"></input>
+  </view>
+  <view class='tel'>
+    <text>手机号</text>
+    <input placeholder="请输入手机号" maxlength='11' type='number' style=' margin-left:56rpx;' bindinput="phnumberInput" value="{{phnumber}}"></input>
+  </view>
+  <view class='tel' style=' margin-bottom: 30rpx;'>
+    <text>身份证</text>
+    <input placeholder="请输入身份证号码" maxlength='20' type='number' style=' margin-left:56rpx;' bindinput="idcardInput" value="{{id_card}}"></input>
+  </view>
+  <button class='apply_btn' bindtap='_apply_code'>
+    <text>点击立即申请</text>
+  </button>
+</view>
+<view class='applysuccess'wx:elif="{{apply_suc}}">
+<view class="scroll_box">
+  <view class="scroll-view_x">
+    <view class="item_list">
+      <view class='name'>{{back_name}}</view>
+      <view class='title'>专属推荐二维码</view>
+      <view class="item_book_img">
+        <image src="{{codeUrl}}"></image>
+      </view>
+      <view class='btn'>
+        <text>恭喜申请成功快去推荐好友吧</text>
+      </view>
+    </view>
+  </view>
+</view>
+</view>
+<view class='applyStatus' wx:else=''>
+  <view class='box'>
+    <view class='left'>
+      <view>
+        <image src='/images/icon_tijiao_secelted@2x.png.png' style='width: 62rpx;height: 62rpx;'></image>
+      </view>
+      <view class='jindutiao' style='width: 10rpx;height: 182rpx;background:#00984b'>
+      </view>
+      <view class='shenhe'>
+        <image src='/images/icon_shenhe_secelted@2x.png ' style='width: 62rpx;height: 62rpx;'></image>
+      </view>
+      <view class='jindutiao' style='width: 10rpx;height: 182rpx;background:#cdcbcc'>
+      </view>
+      <view class='shenhe'>
+        <image src='/images/icon_chengong_normal@2x.png ' style='width: 62rpx;height: 62rpx;'></image>
+      </view>
+    </view>
+    <view class='right'>
+      <view>
+        <view class='a'>{{updatedAt}}</view>
+        <view class='b'>二维码申请已提交</view>
+      </view>
+      <view class='c'>二维码申请审核中</view>
+      <view class='d'>二维码制作中</view>
+    </view>
+    <view>
+    </view>
+    <view>
+    </view>
+  </view>
+</view>

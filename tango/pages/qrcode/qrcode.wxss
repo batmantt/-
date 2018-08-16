@@ -1,0 +1,59 @@
+/* pages/qrcode/qrcode.wxss */
+
+.scroll_box {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding: 20rpx;
+  background: #f4f4f4;
+  white-space: nowrap;
+}
+
+.scroll-view_x {
+  width: 100%;
+  height: 1000rpx;
+  margin-top: 80rpx;
+  margin-left: 50rpx;
+}
+
+.item_list {
+  width: 618rpx;
+  height: 1000rpx;
+  margin-right: 23rpx;
+  display: inline-block;
+  background: #fff;
+  border-radius: 20rpx;
+}
+
+.item_list .name {
+  width: 618rpx;
+  font-size: 45rpx;
+  color: green;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 130rpx;
+}
+
+.item_list .title {
+  width: 618rpx;
+  font-size: 37rpx;
+  color: green;
+  text-align: center;
+  margin: 28rpx 0 76rpx;
+}
+
+.item_book_img {
+  width: 618rpx;
+  height: 388rpx;
+  text-align: center;
+}
+
+.item_list image {
+  width: 388rpx;
+  height: 388rpx;
+  border: 30rpx solid #f4f4f4;
+  border-radius: 30rpx;
+}
+.item_list .btn{
+  margin-top: 124rpx;
+}

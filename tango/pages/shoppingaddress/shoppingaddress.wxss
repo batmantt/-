@@ -1,0 +1,94 @@
+/* pages/shoppingaddress/shoppingaddress.wxss */
+
+.shppingaddress-container {
+  min-height: 100vh;
+  width: 750rpx;
+  background: #f4f4f4;
+  display: flex;
+  position: absolute;
+}
+
+.no_address .img {
+  display: flex;
+  position: relative;
+  height: 180rpx;
+  width: 750rpx;
+  margin-top: 364rpx;
+  margin-bottom: 46rpx;
+}
+
+.no_address .img image {
+  margin: 0 auto;
+}
+
+.no_address .text {
+  color: #999;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.add_address_btn {
+  height: 110rpx;
+  width: 750rpx;
+  background: #fff;
+  font-size: 32rpx;
+  color: #ff7333;
+  font-weight: 600;
+  text-align: center;
+  line-height: 110rpx;
+  position: fixed;
+  bottom: 0;
+}
+
+.has_address .one_address {
+  height: 160rpx;
+  width: 750rpx;
+  background: #fff;
+  margin-bottom: 28rpx;
+}
+
+.one_address .name_number {
+  font-size: 28rpx;
+  color: #333;
+  display: flex;
+  position: absolute;
+  margin-top: 40rpx;
+  margin-left: 24rpx;
+}
+
+.one_address .name_number .number {
+  margin-left: 92rpx;
+}
+
+.one_address .street {
+  font-size: 28rpx;
+  width: 650rpx;
+  color: #999;
+  display: flex;
+  position: absolute;
+  margin-top: 85rpx;
+  margin-left: 24rpx;
+}
+
+.one_address .modify_button {
+  height: 46rpx;
+  width: 46rpx;
+  display: flex;
+  position: absolute;
+  margin-top: 57rpx;
+  margin-left: 660rpx;
+}
+
+.boot {
+  height: 155rpx;
+  background: #f4f4f4;
+}
+
+.def_address {
+  display: flex;
+  position: absolute;
+  margin-top: 120rpx;
+  margin-left: 615rpx;
+  font-size: 25rpx;
+  color: red;
+}

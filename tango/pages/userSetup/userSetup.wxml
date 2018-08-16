@@ -1,0 +1,73 @@
+<!--pages/userSetup/userSetup.wxml-->
+
+<view class="user-setup-container">
+  <view class="form-container">
+    <view class="line-wrapper">
+      <view class="label">昵称</view>
+      <input class="input" value="{{userName}}" placeholder='请输入昵称' bindinput="bindUserName" maxlength='8'></input>
+    </view>
+
+    <view class="line-wrapper">
+      <view class="label">地区</view>
+      <picker class="" mode="region" bindchange='getArea'>
+        <view class="area-wrapper">
+          <view class="item">{{area[0]}}</view>
+          <view class="item middle">{{area[1]}}</view>
+          <view class="item">{{area[2]}}</view>
+        </view>
+      </picker>
+    </view>
+
+    <view class="line-wrapper">
+      <view class="label">性别</view>
+      <view >
+        <picker class='sex' mode="selector" value="{{sexIndex}}" bindchange='selectSex' range="{{sexArr}}">
+          {{sexArr[sexIndex]}}
+      </picker> 
+      </view>
+    </view>
+
+    <view class="line-wrapper phone" bindtap="bindPhoneNumber">
+      <view class="label">手机号</view>
+      <view class="write-phone">{{phoneNumber == false ? '请输入手机号' : phoneNumber}}</view>
+    </view>
+
+    <view class="btn-save" bindtap="updateUserInfo">
+      保存
+    </view>
+
+  </view>
+
+
+  <view class="fixed" wx:if="{{isFixed}}">
+    <view class="bind-phone">
+
+      <view class="title">
+        绑定手机号
+      </view>
+
+      <view class="phone-num-wrapper">
+        <input class="input-number" type="number" maxlength='11' bindinput='getUserPhone' placeholder='请输入手机号码'></input>
+      </view>
+
+      <view class="code-wrapper">
+        <view class="user-code">
+          <input class="input-code" type="number" maxlength='6' bindinput="bindQrCode" placeholder='请输入验证码'></input>
+        </view>
+        <view class="sen-code {{canSendQrCode == true ? 'cansend': 'notsend'}}" bindtap="sendCode">
+          {{canSendQrCode == true ? '发送验证码': second + 's'}}
+        </view>
+      </view>
+
+      <view class="btn-group">
+        <view class="btn" bindtap="reduceBindPhone">
+          取消
+        </view>
+        <view class="btn" bindtap="confirmPhone">
+          确定
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/rules-of-sign/rules-of-sign.wxml-->
+<view class="rules-of-sign-container">
+  <view class='first'>
+    <view class='number'>我的补签卡:{{retcardnumber}}</view>
+  </view>
+  <view class='second'>
+    <view class='text'>累计邀请{{invitenumber}}位好友,获得{{totalcard}}张补签卡，已使用{{cardused}}次。</view>
+    
+    <button class="btn" wx:if="{{!app_userInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">邀请好友赢补签卡</button>
+    <button class='btn' wx:else="" open-type='share' >邀请好友赢补签卡</button>
+  </view>
+  <view class='last'>
+    <text>
+    活动规则
+1.分享好友，且对方首次登陆探狗获得一次补签卡；
+2.每天最多获得三张补签卡；
+3.如遗忘签到，补签卡可以帮助补签之前的记录。
+  </text>
+  </view>
+</view>

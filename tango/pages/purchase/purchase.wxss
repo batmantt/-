@@ -1,0 +1,15 @@
+.purchase-container {
+  height: 100vh;
+}
+
+.purchase-container #img01 {
+  height: 40vh;
+  width: 93.5vw;
+  margin: 38rpx 24rpx -7rpx 24rpx;
+}
+
+.purchase-container #img02 {
+  height: 40vh;
+  width: 93.5vw;
+  margin: 35rpx 24rpx;
+}

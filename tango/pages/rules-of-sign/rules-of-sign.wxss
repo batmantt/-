@@ -1,0 +1,58 @@
+/* pages/rules-of-sign/rules-of-sign.wxss */
+
+.rules-of-sign-container {
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+.first {
+  width: 750rpx;
+  height: 358rpx;
+  background: olive;
+  background: url('https://tango.heeyhome.com/upload/images/img_banner_guize@2x.png');
+  background-size: 750rpx 358rpx;
+}
+
+.first .number {
+  display: flex;
+  position: absolute;
+  width: 230rpx;
+  margin: 284rpx 288rpx;
+  margin-top: 300;
+  color: #fff;
+  font-size: 30rpx;
+}
+
+.second {
+  width: 702rpx;
+  height: 226rpx;
+  background: #fff;
+  margin: 40rpx 24rpx;
+}
+
+.second .text {
+  font-size: 28rpx;
+  color: #ff8953;
+  padding: 35rpx 50rpx;
+}
+
+.second .btn {
+  width: 412rpx;
+  height: 80rpx;
+  font-size: 30rpx;
+  color: #fff;
+  background: #ff8953;
+  border-radius: 40rpx;
+  text-align: center;
+  line-height: 80rpx;
+  margin-left: 145rpx;
+}
+
+.last {
+  width: 602rpx;
+  height: 380rpx;
+  margin: 80rpx 74rpx;
+  font-size: 26rpx;
+  color: #999;
+  line-height: 50rpx;
+}
